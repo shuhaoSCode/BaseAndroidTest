@@ -1,13 +1,24 @@
 package com.shuhao.baseandroidtest;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import android.widget.TextView;
+
+import com.shuhao.libs.common.CommonActivity;
+
+import butterknife.BindView;
+
+public class MainActivity extends CommonActivity {
+
+    @BindView(R.id.main_text)
+    TextView main_text;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void onCreate() {
+        main_text.setText("test");
+    }
+
+    @Override
+    protected int bindLayout() {
+        return R.layout.activity_main;
     }
 }
