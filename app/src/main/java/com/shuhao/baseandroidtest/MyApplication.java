@@ -6,7 +6,7 @@ import com.blankj.utilcode.util.ToastUtils;
 import com.shuhao.libs.common.CommonApplication;
 
 /**
- * Created by luke on 17-9-20.
+ * Created by luke on 2017/9/20.
  */
 
 public class MyApplication extends CommonApplication {
@@ -17,8 +17,8 @@ public class MyApplication extends CommonApplication {
         initToast();
     }
 
-    private void initToast(){
+    private void initToast() {
         ToastUtils.setBgColor(Color.GRAY);
-        ToastUtils.setMsgColor(Color.TRANSPARENT);
+        ToastUtils.setMsgColor(Color.WHITE);
     }
 }

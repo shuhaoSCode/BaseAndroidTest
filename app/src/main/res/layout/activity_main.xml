@@ -5,11 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.shuhao.baseandroidtest.MainActivity">
 
-    <TextView
-        android:id="@+id/main_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
-
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
